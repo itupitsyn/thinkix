@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "moscow2024";
+  src: url("/fonts/MOSCOW2024.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "vivl-rail";
+  src: url("/fonts/vivl-rail.otf") format("opentype");
+}
+
+html {
+  scrollbar-gutter: stable;
+}
