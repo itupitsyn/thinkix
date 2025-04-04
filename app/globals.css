@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "moscow2024";
-  src: url("/fonts/MOSCOW2024.otf") format("opentype");
+  font-family: "integralcf-demibold";
+  src: url("/fonts/Fontspring-DEMO-integralcf-demibold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "vivl-rail";
-  src: url("/fonts/vivl-rail.otf") format("opentype");
+  font-family: "MessinaSansMono-Book";
+  src: url("/fonts/MessinaSansMono-Book.woff2") format("woff2");
 }
 
 html {

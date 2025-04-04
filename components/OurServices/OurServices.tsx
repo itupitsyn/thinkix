@@ -1,12 +1,21 @@
 import { FC } from "react";
-import { ServiceBlock } from "./components";
+import { Service } from "./components";
+import { Slash } from "@/assets";
+import Image from "next/image";
 
-export const ServicesBlock: FC = () => {
+export const OurServices: FC = () => {
   return (
     <div className="flex flex-col gap-8 pt-16">
-      <h2 className="text-3xl">Our services</h2>
+      <div className="flex min-h-[355px] items-center justify-between">
+        <h2 className="font-integralcf-demibold text-[90px] uppercase leading-none">
+          <Slash className="inline-block" />
+          Our services
+        </h2>
 
-      <ServiceBlock
+        <Image src="/img/element.png" width={335} height={452} alt="" />
+      </div>
+
+      <Service
         header="Chat-bots and virtual assistants"
         text={`We use NLP to create smart chatbots and assistants that understand natural language, adapt to context and solve business problems.
 
@@ -17,7 +26,7 @@ How does NLP pipelines for chatbots work?
 — Feedback and Learning → The bot analyzes interactions and improves with each new request.`}
       />
 
-      <ServiceBlock
+      <Service
         header="Content Creation & Automation"
         text={`We use NLP and generative models to create dynamic, personalized and SEO-optimized content, reducing time on routine tasks and increasing marketing effectiveness. 
 
@@ -29,7 +38,7 @@ How does NLP pipelines work for content automation?
 — Automatic publishing and updating → Integration with social networks, email platforms and CRM for dynamic content adaptation.`}
       />
 
-      <ServiceBlock
+      <Service
         header="Knowledge Management"
         text={`We use NLP and generative models to create dynamic, personalized and SEO-optimized content, reducing time on routine tasks and increasing marketing effectiveness.  
 
@@ -41,7 +50,7 @@ How does NLP pipelines work for knowledge management?
 — Feedback and self-learning → Optimizes responses based on user ratings and interaction histories.`}
       />
 
-      <ServiceBlock
+      <Service
         header="Ad-hoc and business processes automatization"
         text={`We use NLP to automate complex and non-standard business tasks, minimizing manual labor and increasing employee speed.  
 
@@ -53,7 +62,7 @@ How does NLP pipelining work for ad-hoc automation?
 — Self-learning and improvement → The system adapts based on user interactions.`}
       />
 
-      <ServiceBlock
+      <Service
         header="AI-Powered Lead Generation"
         text={`We use a Multi-Agent System (MAS) to automate and optimize lead generation, providing flexible, autonomous, and scalable automation. Each agent performs a specific task.
 
@@ -65,7 +74,7 @@ How does our agent-based Lead Generation Pipeline work?
 — Optimization: The Learning Agent analyzes performance and adjusts strategies.`}
       />
 
-      <ServiceBlock
+      <Service
         header="AI-Agent Automation"
         text={`We use Multi-Agent Systems (MAS) where each agent performs a different task, providing flexible, autonomous and scalable automation.  
 

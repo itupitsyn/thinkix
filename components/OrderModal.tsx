@@ -1,7 +1,8 @@
 "use client";
 
+import { ArrowIcon } from "@/assets";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { Button, FloatingLabel, Modal } from "flowbite-react";
+import Image from "next/image";
 import { FC, useCallback, useEffect, useMemo, useState } from "react";
 import { Controller, SubmitHandler, useForm } from "react-hook-form";
 
@@ -54,11 +55,15 @@ export const OrderModal: FC = () => {
 
   return (
     <>
-      <Button gradientDuoTone="purpleToBlue" onClick={() => setShow(true)} size="xl">
-        Book AI consultation
-      </Button>
+      <button
+        onClick={() => setShow(true)}
+        className="group bg-blue-to-fuchsia bg-clip-text text-4xl uppercase text-transparent transition-[opacity_colors] hover:opacity-80 active:text-white"
+      >
+        <span>/Book AI consultation/</span>
+        <ArrowIcon className="-mt-2 ml-2 inline size-8 text-coral transition-[opacity_colors]  group-active:text-white" />
+      </button>
 
-      <Modal show={show} onClose={() => setShow(false)} onSubmit={handleSubmit(submitHandler)}>
+      {/* <Modal show={show} onClose={() => setShow(false)} onSubmit={handleSubmit(submitHandler)}>
         <Modal.Header>Submit request</Modal.Header>
 
         <Modal.Body>
@@ -130,7 +135,7 @@ export const OrderModal: FC = () => {
             Cancel
           </Button>
         </Modal.Footer>
-      </Modal>
+      </Modal> */}
     </>
   );
 };

@@ -1,34 +1,22 @@
-"use client";
-
-import { useEffect, useState } from "react";
-import { LogoCursor } from "./LogoCursor";
-
-const TARGET_STRING = "ThinkIX";
+import Image from "next/image";
+import { OrderModal } from "./OrderModal";
 
 export const MainPageHeader = () => {
-  const [idx, setIdx] = useState(0);
-
-  useEffect(() => {
-    if (idx >= TARGET_STRING.length) return;
-    const tmtId = setTimeout(
-      () => {
-        setIdx((prev) => prev + 1);
-      },
-      idx === 3 ? 1000 : 100,
-    );
-
-    return () => {
-      clearTimeout(tmtId);
-    };
-  }, [idx]);
-
   return (
-    <div className="flex gap-1  pt-10">
-      <h1 className="bg-gradient-to-r from-[#ed5c9f] via-[#be3ff7] to-[#5794ed] bg-clip-text font-vivl-rail text-6xl text-transparent">
-        {TARGET_STRING.slice(0, idx) || "\u00A0"}
-      </h1>
+    <div>
+      <div className="flex min-h-[900px] flex-col justify-center">
+        <Image width={949} height={158} alt="logo" src="img/logo.svg" />
 
-      <LogoCursor />
+        <div className="ml-[352px] flex gap-20 font-integralcf-demibold text-[200px] leading-[100px] tracking-[-6px]">
+          <span>AI</span>
+          <span>LAB</span>
+        </div>
+      </div>
+
+      <div className="flex items-end justify-between">
+        <OrderModal />
+        <div className="text-lg uppercase">Automate Your Business with AI: Unlock Efficiency and Growth</div>
+      </div>
     </div>
   );
 };

@@ -5,12 +5,12 @@ import { FC, ReactNode, useState } from "react";
 import { BsPlusLg } from "react-icons/bs";
 import { HiOutlineMinus } from "react-icons/hi";
 
-interface ServicesBlockProps {
+interface ServiceProps {
   header: string;
   text: ReactNode;
 }
 
-export const ServiceBlock: FC<ServicesBlockProps> = ({ header, text }) => {
+export const Service: FC<ServiceProps> = ({ header, text }) => {
   const [show, setShow] = useState(false);
 
   return (
