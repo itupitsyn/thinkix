@@ -16,74 +16,102 @@ export const OurServices: FC = () => {
       </div>
 
       <Service
-        header="Chat-bots and virtual assistants"
-        text={`We use NLP to create smart chatbots and assistants that understand natural language, adapt to context and solve business problems.
+        index="/01"
+        header="AI-Powered Chatbots & Virtual Assistants"
+        text={`We build intelligent chatbots that enhance customer engagement and streamline business operations. Our AI-powered assistants understand natural language, provide instant responses, and continuously improve through user interactions.
 
-How does NLP pipelines for chatbots work?
-— Query processing → Chatbot understands text, identifies key entities and intent.  
-— Information Retrieval → The system retrieves data from a knowledge base, documents, or CRM.  
-— Response Generation → Generates a meaningful, personalized response with the possibility of clarifying questions.  
-— Feedback and Learning → The bot analyzes interactions and improves with each new request.`}
+Use Cases:
+
+✅ Customer Support Automation – Provide 24/7 assistance, reduce response times, and improve user satisfaction.
+✅ E-commerce Chatbots – Recommend products, answer FAQs, and assist with purchases.
+✅ Lead Qualification & Sales Automation – Engage prospects, gather information, and guide them through the sales funnel.
+✅ HR & IT Support Bots – Automate employee queries and simplify internal operations.
+
+
+💡 Benefits: Reduced workload, faster response times, improved customer experience, and increased efficiency.`}
       />
 
       <Service
-        header="Content Creation & Automation"
-        text={`We use NLP and generative models to create dynamic, personalized and SEO-optimized content, reducing time on routine tasks and increasing marketing effectiveness. 
+        index="/02"
+        header="AI-Driven Content Creation & Automation"
+        text={`We leverage AI to create high-quality, personalized, and SEO-optimized content at scale—saving time and boosting marketing performance.
 
-How does NLP pipelines work for content automation?  
-— Data Analysis and Collection → The system analyzes trends, customer queries, CRM data.  
-— Content generation → NLP model creates relevant texts with customization for target audience.  
-— SEO-optimization and stylistic processing → Keywords are added, tone and structure of the text are checked.  
-— Personalization and A/B testing → Content is adjusted to audience segments, effectiveness testing is performed.  
-— Automatic publishing and updating → Integration with social networks, email platforms and CRM for dynamic content adaptation.`}
+Use Cases:
+
+✅ Social Media Content – Automate post creation, optimize engagement, and generate personalized descriptions.
+✅ Email Marketing – Craft personalized newsletters and automated updates for targeted audiences.
+✅ E-commerce Product Descriptions – Generate unique product listings with SEO enhancements.
+✅ Blog & News Automation – Rewrite and optimize articles for better reach and search engine rankings.
+✅ Corporate & B2B Content – Automate LinkedIn posts, presentations, and sales materials.
+
+💡 Benefits: Faster content production, improved engagement, SEO optimization, and personalized marketing.`}
       />
 
       <Service
-        header="Knowledge Management"
-        text={`We use NLP and generative models to create dynamic, personalized and SEO-optimized content, reducing time on routine tasks and increasing marketing effectiveness.  
+        index="/03"
+        header="AI-Powered Knowledge Management"
+        text={`Our AI solutions transform the way businesses store, access, and manage information—making knowledge easily searchable and actionable.
 
-How does NLP pipelines work for knowledge management?  
-— Document Analysis → NLP extracts key data from texts, structuring them into topics.  
-— Search & Recommendation → Chatbot answers questions by suggesting relevant articles and documents.  
-— Automatic Updates → The system updates the knowledge base by analyzing new content and changes.  
-— Personalization → AI adapts answers to the user's context and previous queries.  
-— Feedback and self-learning → Optimizes responses based on user ratings and interaction histories.`}
+Use Cases:
+
+✅ Smart Search & Recommendations – Quickly retrieve relevant information from documents and databases.
+✅ Automated Reports & Data Extraction – Convert raw data into structured insights and reports.
+✅ Intelligent Document Processing – Analyze and categorize contracts, invoices, and other business documents.
+✅ Internal Chatbots for Employees – Provide instant access to company policies, IT support, and HR services.
+
+💡 Benefits: Improved efficiency, reduced manual work, and enhanced decision-making with AI-powered insights.`}
       />
 
       <Service
-        header="Ad-hoc and business processes automatization"
-        text={`We use NLP to automate complex and non-standard business tasks, minimizing manual labor and increasing employee speed.  
+        index="/04"
+        header="Ad-hoc & Business Process Automation"
+        text={`We automate complex and non-standard business tasks using AI and NLP, reducing manual work and boosting efficiency.
 
-How does NLP pipelining work for ad-hoc automation?  
-— Natural Language Processing → AI understands the query and determines its structure.  
-— Data retrieval → Access CRM, ERP, knowledge bases and back-end systems.  
-— Generating a response or action → Automatically generates a SQL query, report, completed form, etc.  
-— Process Optimization → AI analyzes frequent queries and offers automation of routine tasks.  
-— Self-learning and improvement → The system adapts based on user interactions.`}
+Use Cases:
+
+✅ Text-to-SQL Automation – Instantly convert natural language queries into SQL for quick database insights.
+✅ Automated Report Generation – Extract, structure, and present real-time data in customizable formats.
+✅ Smart Form Filling – Automatically populate forms by analyzing CRM data, documents, or emails.
+✅ Document Processing – Extract, classify, and process information from contracts, invoices, and requisitions.
+✅ Client Request Management – Prioritize and route incoming requests, reducing response time and improving service.
+✅ Internal Communication Automation – Chatbots that assist with IT, HR, and internal documentation queries.
+
+💡 Benefits: Faster processing, reduced errors, minimized workload, and smarter decision-making.`}
       />
 
       <Service
+        index="/05"
         header="AI-Powered Lead Generation"
-        text={`We use a Multi-Agent System (MAS) to automate and optimize lead generation, providing flexible, autonomous, and scalable automation. Each agent performs a specific task.
+        text={`Boost your sales pipeline with AI-driven lead discovery, qualification, and engagement strategies.
 
-How does our agent-based Lead Generation Pipeline work?
-— Lead Discovery: The Discovery Agent identifies potential leads using NLP.
-— Data Retrieval: The Information Agent retrieves lead information from internal sources.
-— Outreach & Analysis: The Outreach Agent generates personalized emails and analyzes market trends.
-— Engagement: The Engagement Agent (chatbot) communicates with leads.
-— Optimization: The Learning Agent analyzes performance and adjusts strategies.`}
+Use Cases:
+
+✅ Automated Lead Analysis – Use web scraping and AI to identify potential customers and key industry trends.
+✅ Smart Application Processing – Automatically extract and classify lead data from incoming inquiries.
+✅ Conversational AI for Engagement – Chatbots that engage leads, answer queries, and schedule demos.
+✅ Cold Email Campaign Automation – Generate and optimize personalized emails for higher open and conversion rates.
+✅ Competitor & Market Monitoring – Track industry changes, competitor mentions, and customer sentiment in real-time.
+
+💡 Benefits: Faster lead qualification, increased conversions, improved engagement, and actionable insights.`}
       />
 
       <Service
+        index="/06"
         header="AI-Agent Automation"
-        text={`We use Multi-Agent Systems (MAS) where each agent performs a different task, providing flexible, autonomous and scalable automation.  
+        text={`We deploy Multi-Agent Systems (MAS) where specialized AI agents automate tasks, adapt to data, and scale processes seamlessly.
 
-How does an agent-based Pipeline work?  
-— Task discovery → The agent analyzes the incoming request and classifies it.  
-— Knowledge base query / CRM / ERP → The data agent retrieves the desired information.  
-— Information Processing → The analysis agent structures the data, triggers the desired process.  
-— Generating a response or solution → Reporting agent, chatbot or router communicates the result.  
-— Self-learning and optimization → The agent adjusts its strategy based on historical data.`}
+Use Cases:
+
+✅ Data Agent – Extracts and processes data from CRM, ERP, and databases for instant insights.
+✅ Query Agent – Transforms natural language into SQL queries for automated reporting.
+✅ Report Agent – Generates and visualizes reports, integrating with BI tools for data-driven decisions.
+✅ Routing Agent – Automatically classifies and routes requests based on priority and context.
+✅ Documentation Agent – Manages document recognition, classification, and updates knowledge bases.
+✅ Support Agent – Automates FAQ responses, reducing workload and enhancing customer experience.
+✅ Integration Agent – Links systems via API, ensuring seamless automation across platforms.
+✅ Decision Agent – Analyzes data, suggests optimal strategies, and assesses risks for smarter decision-making.
+
+💡 Benefits: Streamlined operations, reduced manual effort, faster decision cycles, and enhanced flexibility.`}
       />
     </div>
   );

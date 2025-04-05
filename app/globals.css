@@ -12,6 +12,11 @@
   src: url("/fonts/MessinaSansMono-Book.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "HelveticaNowDisplay-Regular";
+  src: url("/fonts/HelveticaNowDisplay-Regular.woff2") format("woff2");
+}
+
 html {
   scrollbar-gutter: stable;
 }
