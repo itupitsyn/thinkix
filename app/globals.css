@@ -19,4 +19,9 @@
 
 html {
   scrollbar-gutter: stable;
+  scroll-behavior: smooth;
+}
+
+.app-container {
+  @apply mx-auto min-w-[300px] max-w-[1920px];
 }

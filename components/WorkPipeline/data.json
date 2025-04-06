@@ -1,0 +1,32 @@
+[
+  {
+    "header": "Initial Consultation",
+    "whatHappens": "What Happens:\n\nYou share the challenge you’re looking to solve.\n - We ask detailed questions to understand your business needs.\n - We assess project complexity, scope, and potential technologies.",
+    "outcome": "Outcome:\n\nYou gain clarity on possible solutions, and we identify the right tools for the job."
+  },
+  {
+    "header": "Briefing & Information Gathering",
+    "whatHappens": "What Happens:\n\n - We collaborate to complete a detailed brief, defining goals, constraints, and desired outcomes.\n - We analyze existing data and materials (like CRM, APIs, internal documents, or examples).\n - We develop clear requirements for the solution.",
+    "outcome": "Outcome:\n\nA finalized set of requirements and a clear development direction."
+  },
+  {
+    "header": "Solution Design & Logic Development",
+    "whatHappens": "What Happens:\n\n - We create a visual and logical prototype (for chatbots, AI assistants, automation systems, etc.).\n - We define key workflows: tasks the system will handle, data sources, and user interactions.\n - We focus on user experience (UX) and interface design (UI), if needed.",
+    "outcome": "Outcome:\n\nYou’ll visualize how your product will function before development begins."
+  },
+  {
+    "header": "Concept Presentation & Finalizing Requirements",
+    "whatHappens": "What Happens:\n\n - We present the design, interaction scenarios, and system mechanics.\n - We gather feedback, refine details, and finalize the technical requirements.",
+    "outcome": "Outcome:\n\nA clear, transparent description of what we’ll build and how we’ll build it."
+  },
+  {
+    "header": "Contract Agreement",
+    "whatHappens": "What Happens:\n\n - We define project stages, budgets, timelines, and responsibilities.\n - We formalize the agreement and kick off the technical implementation.",
+    "outcome": "Outcome:\n\nFixed guarantees, timelines, and scope—ensuring a transparent and structured process."
+  },
+  {
+    "header": "Development & Implementation",
+    "whatHappens": "What Happens:\n\n - We handle coding, testing, and configuration, depending on the project type.\n - For AI solutions, we train models and fine-tune algorithms.\n - For automation projects, we integrate with your systems (CRM, databases, APIs).",
+    "outcome": "Outcome:\n\nA functional product ready for internal testing."
+  }
+]

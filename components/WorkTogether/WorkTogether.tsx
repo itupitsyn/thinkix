@@ -1,9 +1,9 @@
 import Image from "next/image";
-import LogoIcon from "../../public/img/logo.svg";
+import { PageLink } from "@/types";
 
 export const WorkTogether = () => {
   return (
-    <div className="pt-20">
+    <div className="app-container pt-20" id={PageLink.AboutUs}>
       <h2 className="font-integralcf-demibold text-[90px] uppercase leading-none">
         Let s work together to hapness the power of AI and technology to achieve your goals
       </h2>

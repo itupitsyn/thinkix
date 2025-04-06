@@ -1,10 +1,8 @@
 "use client";
 
-import { ArrowIcon } from "@/assets";
+import { GradientedButton } from "@/components/GradientedButton";
 import { SmoothlyOpeningBlock } from "@/components/SmoothlyOpeningBlock";
 import { FC, ReactNode, useState } from "react";
-import { BsPlusLg } from "react-icons/bs";
-import { HiOutlineMinus } from "react-icons/hi";
 
 interface ServiceProps {
   index: string;
@@ -24,17 +22,18 @@ export const Service: FC<ServiceProps> = ({ index, header, text }) => {
           <h3 className="bg-fuchsia-to-blue-65 bg-clip-text font-helvetica-now-regular text-[40px] uppercase text-transparent">{header}</h3>
         </div>
 
-        <button
+        <GradientedButton
           onClick={() => {
             setShow((prev) => !prev);
           }}
+          className="text-[40px]"
         >
-          <ArrowIcon className="h-6 w-7" />
-        </button>
+          🡦
+        </GradientedButton>
       </div>
 
       <SmoothlyOpeningBlock opened={show} className="flex justify-end" duration={700}>
-        <div className="w-2/3 whitespace-pre-wrap pt-4 text-[20px] uppercase">{text}</div>
+        <div className="w-2/3 whitespace-pre-wrap pt-4 text-[20px] uppercase leading-none">{text}</div>
       </SmoothlyOpeningBlock>
     </div>
   );

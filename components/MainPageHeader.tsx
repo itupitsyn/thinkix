@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { OrderModal } from "./OrderModal";
+import { PageLink } from "@/types";
 
 export const MainPageHeader = () => {
   return (
-    <div>
+    <div id={PageLink.Home} className="app-container">
       <div className="flex min-h-[900px] flex-col justify-center">
         <Image width={949} height={158} alt="logo" src="img/logo.svg" />
 

@@ -9,9 +9,9 @@ const config: Config = {
         padding: "1rem",
       },
       fontFamily: {
-        "integralcf-demibold": "integralcf-demibold",
-        "messina-mono": "MessinaSansMono-Book",
-        "helvetica-now-regular": "HelveticaNowDisplay-Regular",
+        "integralcf-demibold": "integralcf-demibold, sans-serif",
+        "messina-mono": "MessinaSansMono-Book, sans-serif",
+        "helvetica-now-regular": "HelveticaNowDisplay-Regular, sans-serif",
       },
       backgroundColor: {
         main: "#0f0f0f",
@@ -29,4 +29,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;

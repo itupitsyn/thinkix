@@ -1,6 +1,8 @@
+import { Footer } from "@/components/Footer";
 import { MainPageHeader } from "@/components/MainPageHeader";
 import { NavBar } from "@/components/NavBar";
 import { OurServices } from "@/components/OurServices";
+import { WorkPipeline } from "@/components/WorkPipeline";
 import { WorkTogether } from "@/components/WorkTogether";
 import Image from "next/image";
 
@@ -16,19 +18,16 @@ export default function Home() {
         height={1566}
       />
 
-      <main className="relative z-[1] mx-auto min-w-[300px] max-w-[1920px] px-10">
+      <main className="relative z-[1]">
         <MainPageHeader />
 
         <WorkTogether />
 
         <OurServices />
 
-        {/* <div className="mt-10 flex min-h-[40rem] flex-col items-start justify-center gap-32 py-16 sm:px-16">
-          <h2 className="text-3xl">We automate your business with AI</h2>
-          <OrderModal />
-        </div>
+        <WorkPipeline />
 
-        <ServicesBlock /> */}
+        <Footer />
       </main>
     </div>
   );
