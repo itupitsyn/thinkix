@@ -5,6 +5,7 @@ import data from "./data.json";
 import { Step } from "./components";
 import { FC, useRef } from "react";
 import classNames from "classnames";
+import { GradientedButton } from "../GradientedButton";
 
 export const WorkPipeline: FC = () => {
   const shiftRef = useRef<null | number>(null);
@@ -23,7 +24,7 @@ export const WorkPipeline: FC = () => {
       </div>
 
       <div
-        className="app-container relative pb-20 pl-52 pr-20 pt-36"
+        className="app-container relative pl-52 pr-20 pt-36"
         onPointerDown={(e) => {
           if (!swiperRef.current) return;
 
@@ -60,9 +61,21 @@ export const WorkPipeline: FC = () => {
           ))}
         </div>
 
-        <div ref={imgRef} className="absolute -left-52 bottom-20">
+        <div ref={imgRef} className="absolute -left-52 bottom-0">
           <WorkPipelineImage />
         </div>
+      </div>
+
+      <div className="app-container relative z-[1] flex justify-between gap-6 pb-20">
+        <GradientedButton className="text-2xl uppercase tracking-wide">
+          <span className="text-[27px]">🡧</span>
+          /back/
+        </GradientedButton>
+
+        <GradientedButton className="text-2xl uppercase tracking-wide">
+          /next/
+          <span className="text-[27px]">🡦</span>
+        </GradientedButton>
       </div>
     </div>
   );

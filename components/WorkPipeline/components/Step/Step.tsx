@@ -21,7 +21,7 @@ export const Step: FC<StepProps> = ({ header, index, whatHappens, outcome, class
           {header}
         </h3>
 
-        <div className="flex flex-col gap-3 leading-none">
+        <div className="mt-11 flex flex-col gap-3 leading-none">
           <p className="whitespace-pre-wrap text-sm uppercase">{whatHappens}</p>
           <p className="whitespace-pre-wrap text-sm uppercase">{outcome}</p>
         </div>

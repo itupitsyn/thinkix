@@ -19,7 +19,7 @@ export const OurServices: FC = () => {
         <Image src="/img/element.png" width={335} height={452} alt="" className="absolute -top-20 right-0" />
       </div>
 
-      <div className="app-container z-[1] w-full">
+      <div className="app-container z-[1] flex w-full flex-col gap-8">
         {data.map((item, idx) => (
           <Service key={idx} index={`/0${idx + 1}`} header={item.header} text={item.text} />
         ))}

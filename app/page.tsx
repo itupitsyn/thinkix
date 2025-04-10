@@ -1,6 +1,7 @@
 import { Footer } from "@/components/Footer";
 import { MainPageHeader } from "@/components/MainPageHeader";
 import { NavBar } from "@/components/NavBar";
+import { OurCases } from "@/components/OurCases/OurCases";
 import { OurServices } from "@/components/OurServices";
 import { WorkPipeline } from "@/components/WorkPipeline";
 import { WorkTogether } from "@/components/WorkTogether";
@@ -26,6 +27,8 @@ export default function Home() {
         <OurServices />
 
         <WorkPipeline />
+
+        <OurCases />
 
         <Footer />
       </main>

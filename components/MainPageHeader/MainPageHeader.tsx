@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { OrderModal } from "./OrderModal";
+import { OrderModal } from "../OrderModal";
 import { PageLink } from "@/types";
 
 export const MainPageHeader = () => {
