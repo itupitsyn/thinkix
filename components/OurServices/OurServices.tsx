@@ -16,7 +16,7 @@ export const OurServices: FC = () => {
           </h2>
         </div>
 
-        <Image src="/img/element.png" width={335} height={452} alt="" className="absolute -top-20 right-0" />
+        <Image priority src="/img/element.png" width={335} height={452} alt="" className="absolute -top-20 right-0" />
       </div>
 
       <div className="app-container z-[1] flex w-full flex-col gap-8">

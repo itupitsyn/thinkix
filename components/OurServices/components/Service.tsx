@@ -2,6 +2,7 @@
 
 import { GradientedButton } from "@/components/GradientedButton";
 import { SmoothlyOpeningBlock } from "@/components/SmoothlyOpeningBlock";
+import classNames from "classnames";
 import { FC, ReactNode, useState } from "react";
 
 interface ServiceProps {
@@ -26,7 +27,7 @@ export const Service: FC<ServiceProps> = ({ index, header, text }) => {
           onClick={() => {
             setShow((prev) => !prev);
           }}
-          className="text-[40px]"
+          className={classNames("text-[40px] duration-700", show && "-rotate-90")}
         >
           🡦
         </GradientedButton>

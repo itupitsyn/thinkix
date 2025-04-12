@@ -32,7 +32,7 @@ export const Footer = () => {
         ))}
       </div>
 
-      <Image src="/img/element-footer.png" width={335} height={452} alt="" />
+      <Image src="/img/element-footer.png" width={297} height={424} alt="" className="h-[424px] w-auto flex-none" />
     </div>
   );
 };

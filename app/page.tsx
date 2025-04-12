@@ -1,7 +1,7 @@
 import { Footer } from "@/components/Footer";
 import { MainPageHeader } from "@/components/MainPageHeader";
 import { NavBar } from "@/components/NavBar";
-import { OurCases } from "@/components/OurCases/OurCases";
+import { OurCases } from "@/components/OurCases";
 import { OurServices } from "@/components/OurServices";
 import { WorkPipeline } from "@/components/WorkPipeline";
 import { WorkTogether } from "@/components/WorkTogether";
@@ -12,6 +12,7 @@ export default function Home() {
     <div className="relative min-h-svh overflow-hidden">
       <NavBar />
       <Image
+        priority
         alt=""
         src="img/bg-header.svg"
         className="absolute -top-96 left-1/2 w-[2412px] max-w-none translate-x-[-45%]"

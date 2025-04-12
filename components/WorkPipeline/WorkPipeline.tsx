@@ -3,9 +3,10 @@
 import { Slash, WorkPipelineImage } from "@/assets";
 import data from "./data.json";
 import { Step } from "./components";
-import { FC, useRef } from "react";
+import { FC, useCallback, useRef } from "react";
 import classNames from "classnames";
 import { GradientedButton } from "../GradientedButton";
+import { PageLink } from "@/types";
 
 export const WorkPipeline: FC = () => {
   const shiftRef = useRef<null | number>(null);
@@ -14,8 +15,12 @@ export const WorkPipeline: FC = () => {
   const swiperRef = useRef<HTMLDivElement>(null);
   const imgRef = useRef<HTMLDivElement>(null);
 
+  const onNextClick = useCallback(() => {
+    if (!swiperRef.current) return;
+  }, []);
+
   return (
-    <div className="pt-56">
+    <div className="pt-56" id={PageLink.WorkPipeline}>
       <div className="app-container">
         <h2 className="font-integralcf-demibold text-[90px] uppercase leading-none">
           <Slash className="inline-block" />

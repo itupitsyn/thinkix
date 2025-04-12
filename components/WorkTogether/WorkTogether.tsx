@@ -8,7 +8,7 @@ export const WorkTogether = () => {
         Let s work together to hapness the power of AI and technology to achieve your goals
       </h2>
       <div className="flex items-center justify-between gap-10 pt-24">
-        <Image src="/img/think-ix-bg.png" alt="" width={1135} height={407} className="w-2/3" />
+        <Image priority src="/img/think-ix-bg.png" alt="" width={1135} height={407} className="w-2/3" />
 
         <div className="flex grow flex-col gap-5 text-[18px] leading-none">
           <p className="max-w-[450px] self-end uppercase">

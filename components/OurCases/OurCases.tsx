@@ -2,6 +2,8 @@ import { Slash } from "@/assets";
 import { PageLink } from "@/types";
 import Image from "next/image";
 import { FC } from "react";
+import { Case } from "./Case";
+import data from "./data.json";
 
 export const OurCases: FC = () => {
   return (
@@ -14,7 +16,13 @@ export const OurCases: FC = () => {
           </h2>
         </div>
 
-        <Image src="/img/element-cases.png" width={428} height={550} alt="" className="absolute -top-20 right-0" />
+        <Image priority src="/img/element-cases.png" width={428} height={550} alt="" className="absolute -top-20 right-0" />
+      </div>
+
+      <div className="app-container z-[1] flex w-full justify-center gap-8">
+        {data.map((item) => (
+          <Case key={item.id} header={item.header} id={item.id} />
+        ))}
       </div>
     </div>
   );
