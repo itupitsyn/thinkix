@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { PageLink } from "@/types";
+import Logo from "../../public/img/logo-reverse-gradient.svg";
 
 export const WorkTogether = () => {
   return (
@@ -7,8 +7,17 @@ export const WorkTogether = () => {
       <h2 className="font-integralcf-demibold text-[90px] uppercase leading-none">
         Let s work together to hapness the power of AI and technology to achieve your goals
       </h2>
-      <div className="flex items-center justify-between gap-10 pt-24">
-        <Image priority src="/img/think-ix-bg.png" alt="" width={1135} height={407} className="w-2/3" />
+      <div className="flex justify-between gap-10 pt-24">
+        {/* <Image priority quality={100} src="/img/think-ix-bg.png" alt="" width={1135} height={407} className="w-2/3" /> */}
+        <div className="relative flex max-w-[70%] items-center bg-black">
+          <Logo className="max-w-full" />
+          <div className="absolute left-0 top-0 flex size-full">
+            {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((item) => (
+              <div key={item} className="grow bg-fence backdrop-blur-[30px]" />
+            ))}
+          </div>
+          <div className="absolute left-0 top-0 size-full" />
+        </div>
 
         <div className="flex grow flex-col gap-5 text-[18px] leading-none">
           <p className="max-w-[450px] self-end uppercase">

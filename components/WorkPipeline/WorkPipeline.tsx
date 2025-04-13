@@ -33,7 +33,7 @@ export const WorkPipeline: FC = () => {
 
       if (rect.x < currentRect.x) {
         setSmooth(true);
-        setTimeout(() => setSmooth(false), 500);
+        setTimeout(() => setSmooth(false), 700);
         const shift = currentRect.x - rect.x;
 
         transRef.current -= shift;
@@ -64,7 +64,7 @@ export const WorkPipeline: FC = () => {
 
       if (rect.x > currentRect.x) {
         setSmooth(true);
-        setTimeout(() => setSmooth(false), 500);
+        setTimeout(() => setSmooth(false), 700);
 
         const shift = currentRect.x - rect.x;
 
@@ -118,7 +118,7 @@ export const WorkPipeline: FC = () => {
           shiftRef.current = null;
         }}
       >
-        <div ref={swiperRef} className={classNames("flex min-h-[578px] gap-36", smooth && "transition-transform duration-500")}>
+        <div ref={swiperRef} className={classNames("flex min-h-[578px] gap-36", smooth && "transition-transform duration-700")}>
           {data.map((item, idx) => (
             <Step
               key={idx}
@@ -129,7 +129,7 @@ export const WorkPipeline: FC = () => {
           ))}
         </div>
 
-        <div ref={imgRef} className={classNames("absolute -left-52 bottom-0", smooth && "transition-transform duration-500")}>
+        <div ref={imgRef} className={classNames("absolute -left-52 bottom-0", smooth && "transition-transform duration-700")}>
           <WorkPipelineImage />
         </div>
       </div>
