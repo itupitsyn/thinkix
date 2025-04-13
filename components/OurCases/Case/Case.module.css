@@ -1,0 +1,27 @@
+@keyframes blink {
+  from {
+    @apply bg-white/5;
+  }
+
+  to {
+    @apply bg-transparent;
+  }
+}
+
+@keyframes blink-reverse {
+  from {
+    @apply bg-transparent;
+  }
+
+  to {
+    @apply bg-white/5;
+  }
+}
+
+.blink:hover {
+  animation: 0.5s blink ease-in-out;
+}
+
+.blink-reverse:not(:hover) {
+  animation: 0.5s blink-reverse ease-in-out;
+}

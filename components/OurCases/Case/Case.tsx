@@ -5,33 +5,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { FC, useEffect, useState } from "react";
 
+import styles from "./Case.module.css";
+
 interface CaseProps {
   id: number;
   header: string;
 }
 
 export const Case: FC<CaseProps> = ({ id, header }) => {
-  const [colored, setColored] = useState(false);
-
-  useEffect(() => {
-    const tmt = setTimeout(() => setColored(false), 50);
-
-    return () => {
-      clearTimeout(tmt);
-    };
-  }, [colored]);
-
   return (
-    <Link
-      href={`/case/${id}`}
-      className={classNames("group block transition-colors duration-500", colored && "bg-white/5 duration-0")}
-      onMouseEnter={() => {
-        setColored(true);
-      }}
-      onMouseLeave={() => {
-        setColored(true);
-      }}
-    >
+    <Link href={`/case/${id}`} className={classNames("group block", styles.blink, styles["blink-reverse"])}>
       <div className="relative transition-transform duration-500 group-hover:-translate-y-1/3">
         <Image
           alt=""
