@@ -4,13 +4,15 @@ import { Slash } from "@/assets";
 import Image from "next/image";
 import { PageLink } from "@/types";
 import data from "./data.json";
+import classNames from "classnames";
+import { fontIntegralCfDemi } from "@/fonts";
 
 export const OurServices: FC = () => {
   return (
     <div className="flex flex-col gap-8 pt-16" id={PageLink.OurServices}>
       <div className="relative z-[1] min-h-[355px]">
         <div className="app-container w-full">
-          <h2 className="translate-y-10 font-integralcf-demibold text-[90px] uppercase leading-none">
+          <h2 className={classNames("translate-y-10 text-[90px] uppercase leading-none", fontIntegralCfDemi.className)}>
             <Slash className="inline-block" />
             Our services
           </h2>

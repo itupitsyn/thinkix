@@ -2,6 +2,7 @@
 
 import { GradientedButton } from "@/components/GradientedButton";
 import { SmoothlyOpeningBlock } from "@/components/SmoothlyOpeningBlock";
+import { fontHelveticaNow } from "@/fonts";
 import classNames from "classnames";
 import { FC, ReactNode, useState } from "react";
 
@@ -20,7 +21,11 @@ export const Service: FC<ServiceProps> = ({ index, header, text }) => {
         <div className="flex items-center gap-44">
           <div className="text-[20px]">{index}</div>
 
-          <h3 className="bg-fuchsia-to-blue-65 bg-clip-text font-helvetica-now-regular text-[40px] uppercase text-transparent">{header}</h3>
+          <h3
+            className={classNames("bg-fuchsia-to-blue-65 bg-clip-text text-[40px] uppercase text-transparent", fontHelveticaNow.className)}
+          >
+            {header}
+          </h3>
         </div>
 
         <GradientedButton

@@ -4,4 +4,5 @@ export enum PageLink {
   OurServices = "our-services",
   WorkPipeline = "work-pipeline",
   Cases = "cases",
+  Contacts = "contacts",
 }

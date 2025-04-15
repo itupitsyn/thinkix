@@ -1,6 +1,6 @@
-import { useDebounce } from "@uidotdev/usehooks";
 import cn from "classnames";
 import { FC, PropsWithChildren, useEffect, useMemo, useState } from "react";
+import { useDebounceValue } from "usehooks-ts";
 
 type SmoothlyOpeningBlockProps = PropsWithChildren<{
   opened?: boolean;
@@ -10,7 +10,7 @@ type SmoothlyOpeningBlockProps = PropsWithChildren<{
 }>;
 
 export const SmoothlyOpeningBlock: FC<SmoothlyOpeningBlockProps> = ({ opened, forceRender, className, duration = 200, children }) => {
-  const openedDebounced = useDebounce(opened, duration);
+  const openedDebounced = useDebounceValue(opened, duration);
   const [isInProgress, setIsInProgress] = useState(false);
 
   useEffect(() => {

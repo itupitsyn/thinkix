@@ -1,4 +1,5 @@
 import { PipelineArrow } from "@/assets";
+import { fontHelveticaNow, fontMessinaMono } from "@/fonts";
 import classNames from "classnames";
 import { FC } from "react";
 
@@ -16,8 +17,10 @@ export const Step: FC<StepProps> = ({ header, index, whatHappens, outcome, class
       <PipelineArrow className="mt-2 flex-none" />
 
       <div>
-        <h3 className="bg-fuchsia-to-blue-65 bg-clip-text font-helvetica-now-regular text-[30px] uppercase  text-transparent">
-          <span className="font-messina-mono text-[30px]">{`${index} `}</span>
+        <h3
+          className={classNames("bg-fuchsia-to-blue-65 bg-clip-text text-[30px] uppercase  text-transparent", fontHelveticaNow.className)}
+        >
+          <span className={classNames("text-[30px]", fontMessinaMono.className)}>{`${index} `}</span>
           {header}
         </h3>
 

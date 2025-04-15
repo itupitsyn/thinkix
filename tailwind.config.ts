@@ -8,11 +8,6 @@ const config: Config = {
         center: true,
         padding: "1rem",
       },
-      fontFamily: {
-        "integralcf-demibold": "integralcf-demibold, sans-serif",
-        "messina-mono": "MessinaSansMono-Book, sans-serif",
-        "helvetica-now-regular": "HelveticaNowDisplay-Regular, sans-serif",
-      },
       backgroundColor: {
         main: "#0f0f0f",
       },
@@ -24,7 +19,7 @@ const config: Config = {
           "linear-gradient(94deg, rgba(106,139,231,1) 7%, rgba(155,85,243,1) 25%, rgba(212,81,193,1) 50%, rgba(231,95,161,1) 80%)",
         "fuchsia-to-blue-65":
           "linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%), linear-gradient(117deg, #E75FA1 20%, #D451C1 50%, #9B55F3 75%, #6A8BE7 100%)",
-        fence: "linear-gradient(90deg, rgba(255,255,255,0.03) 0%,  rgba(0,0,0,0.03) 85%,  rgba(255,255,255,0.03) 100%)",
+        fence: "linear-gradient(90deg, rgba(255,255,255,0.001) 0%,  rgba(0,0,0,0.001) 85%,  rgba(255,255,255,0.001) 100%)",
       },
     },
   },

@@ -7,6 +7,7 @@ import { FC, useCallback, useRef, useState } from "react";
 import classNames from "classnames";
 import { GradientedButton } from "../GradientedButton";
 import { PageLink } from "@/types";
+import { fontIntegralCfDemi } from "@/fonts";
 
 export const WorkPipeline: FC = () => {
   const [smooth, setSmooth] = useState(false);
@@ -83,7 +84,7 @@ export const WorkPipeline: FC = () => {
   return (
     <div className="pt-56" id={PageLink.WorkPipeline}>
       <div className="app-container">
-        <h2 className="font-integralcf-demibold text-[90px] uppercase leading-none">
+        <h2 className={classNames("text-[90px] uppercase leading-none", fontIntegralCfDemi.className)}>
           <Slash className="inline-block" />
           Our work pipeline
         </h2>

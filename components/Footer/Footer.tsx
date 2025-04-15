@@ -1,10 +1,11 @@
+import { fontIntegralCfDemi } from "@/fonts";
 import { PageLink } from "@/types";
 import classNames from "classnames";
 import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
 
-const linkTexts: Record<PageLink, string> = {
+const linkTexts: Partial<Record<PageLink, string>> = {
   [PageLink.AboutUs]: "about us",
   [PageLink.Cases]: "cases",
   [PageLink.Home]: "home",
@@ -14,17 +15,20 @@ const linkTexts: Record<PageLink, string> = {
 
 export const Footer = () => {
   return (
-    <div className="flex items-end justify-between pb-20 pt-64">
+    <div id={PageLink.Contacts} className="flex items-end justify-between pb-20 pt-64">
       <div className="pb-8">
-        {Object.values(PageLink).map((item, idx) => (
-          <Fragment key={item}>
+        {Object.entries(linkTexts).map(([id, header], idx) => (
+          <Fragment key={id}>
             {idx > 0 && <span className="inline-block w-12"> </span>}
             <span>
               <Link
-                href={`#${item}`}
-                className="whitespace-nowrap bg-fuchsia-to-blue-65 bg-clip-text font-integralcf-demibold text-[90px] uppercase leading-none text-transparent"
+                href={`#${id}`}
+                className={classNames(
+                  "whitespace-nowrap bg-fuchsia-to-blue-65 bg-clip-text text-[90px] uppercase leading-none text-transparent",
+                  fontIntegralCfDemi.className,
+                )}
               >
-                {linkTexts[item]}
+                {header}
               </Link>
               <span className="ml-3 text-xl">/0{idx + 1}</span>
             </span>
