@@ -6,3 +6,10 @@ export enum PageLink {
   Cases = "cases",
   Contacts = "contacts",
 }
+
+export type OrderFormData = {
+  name: string;
+  email: string;
+  telegram?: string;
+  whatsapp?: string;
+};
