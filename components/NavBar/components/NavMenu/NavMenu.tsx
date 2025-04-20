@@ -22,7 +22,7 @@ export const NavMenu: FC<NavMenuProps> = ({ open, onClose }) => {
     <div
       className={classNames(
         "absolute flex flex-col transition-[scale_transform]",
-        open ? "right-64 top-4 scale-100 pt-8" : "right-0 top-4 scale-0",
+        open ? "left-6 top-4 scale-100 pt-8 sm:left-auto sm:right-64" : "right-0 top-4 scale-0",
       )}
     >
       {items.map((item) => (

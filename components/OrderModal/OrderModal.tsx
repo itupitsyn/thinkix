@@ -62,21 +62,29 @@ export const OrderModal: FC = () => {
     <>
       <button
         onClick={() => setShow(true)}
-        className="group bg-blue-to-fuchsia bg-clip-text text-4xl uppercase text-transparent transition-[opacity_colors] hover:text-white active:text-transparent"
+        className="group bg-blue-to-fuchsia bg-clip-text text-xl uppercase text-transparent transition-[opacity_colors] hover:text-white active:text-transparent sm:text-4xl"
       >
         <span>/Book AI consultation/</span>
-        <ArrowIcon className="-mt-2 ml-2 inline size-8 text-coral transition-[opacity_colors] group-hover:text-white group-active:text-coral" />
+        <ArrowIcon className="-mt-2 ml-2 inline size-4 text-coral transition-[opacity_colors] group-hover:text-white group-active:text-coral sm:size-8" />
       </button>
 
       {show &&
         createPortal(
           <div className="fixed left-0 top-0 z-50 flex h-screen w-screen items-center justify-center backdrop-blur-xl">
-            <form noValidate onSubmit={handleSubmit(submitHandler)} className="flex flex-col gap-6 bg-main px-8 py-10 shadow-xl">
+            <form
+              noValidate
+              onSubmit={handleSubmit(submitHandler)}
+              className="relative flex h-svh w-svw flex-col gap-6 bg-main px-8 py-10 shadow-lg sm:size-auto"
+            >
+              <GradientedButton onClick={() => setShow(false)} className="absolute right-4 top-4">
+                X
+              </GradientedButton>
+
               <h2 className="text-2xl font-bold">Submit request</h2>
 
               {error && <div className="text-red-500">{error}</div>}
 
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-4 pt-20 sm:pt-0">
                 <Controller
                   control={control}
                   name="name"
