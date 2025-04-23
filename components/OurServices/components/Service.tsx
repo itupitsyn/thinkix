@@ -18,11 +18,14 @@ export const Service: FC<ServiceProps> = ({ index, header, text }) => {
   return (
     <div className="">
       <div className="flex max-w-[1200px] justify-between gap-6">
-        <div className="flex items-center gap-44">
-          <div className="text-[20px]">{index}</div>
+        <div className="flex items-start gap-5 text-xl lg:items-center lg:gap-44">
+          <div className="leading-none lg:text-[20px]">{index}</div>
 
           <h3
-            className={classNames("bg-fuchsia-to-blue-65 bg-clip-text text-[40px] uppercase text-transparent", fontHelveticaNow.className)}
+            className={classNames(
+              "bg-fuchsia-to-blue-65 bg-clip-text uppercase leading-none text-transparent lg:text-[40px]",
+              fontHelveticaNow.className,
+            )}
           >
             {header}
           </h3>
@@ -32,14 +35,17 @@ export const Service: FC<ServiceProps> = ({ index, header, text }) => {
           onClick={() => {
             setShow((prev) => !prev);
           }}
-          className={classNames("text-[40px] duration-700", show && "-rotate-90")}
+          className={classNames(
+            "self-start text-2xl leading-none transition-transform duration-700 lg:self-stretch lg:text-[40px]",
+            show && "-rotate-90",
+          )}
         >
           🡦
         </GradientedButton>
       </div>
 
       <SmoothlyOpeningBlock opened={show} className="flex justify-end" duration={700}>
-        <div className="w-2/3 whitespace-pre-wrap pt-4 text-[20px] uppercase leading-none">{text}</div>
+        <div className="whitespace-pre-wrap pt-4 text-sm uppercase leading-none lg:w-2/3 lg:text-[20px]">{text}</div>
       </SmoothlyOpeningBlock>
     </div>
   );

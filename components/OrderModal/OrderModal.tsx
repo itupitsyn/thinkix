@@ -62,10 +62,10 @@ export const OrderModal: FC = () => {
     <>
       <button
         onClick={() => setShow(true)}
-        className="group bg-blue-to-fuchsia bg-clip-text text-xl uppercase text-transparent transition-[opacity_colors] hover:text-white active:text-transparent sm:text-4xl"
+        className="group bg-blue-to-fuchsia bg-clip-text text-xl uppercase text-transparent transition-[opacity_colors] hover:text-white active:text-transparent lg:text-4xl"
       >
         <span>/Book AI consultation/</span>
-        <ArrowIcon className="-mt-2 ml-2 inline size-4 text-coral transition-[opacity_colors] group-hover:text-white group-active:text-coral sm:size-8" />
+        <ArrowIcon className="-mt-2 ml-2 inline size-4 text-coral transition-[opacity_colors] group-hover:text-white group-active:text-coral lg:size-8" />
       </button>
 
       {show &&

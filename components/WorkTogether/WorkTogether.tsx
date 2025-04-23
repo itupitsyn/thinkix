@@ -5,13 +5,13 @@ import { fontIntegralCfDemi } from "@/fonts";
 
 export const WorkTogether = () => {
   return (
-    <div className="app-container pt-20" id={PageLink.AboutUs}>
-      <h2 className={classNames("text-[90px] uppercase leading-none", fontIntegralCfDemi.className)}>
+    <div className="app-container px-4 pt-20" id={PageLink.AboutUs}>
+      <h2 className={classNames("text-2xl uppercase leading-none lg:text-5xl xl:text-[90px]", fontIntegralCfDemi.className)}>
         Let s work together to hapness the power of AI and technology to achieve your goals
       </h2>
-      <div className="flex justify-between gap-10 pt-24">
-        <div className="relative flex max-w-[70%] items-center bg-black">
-          <Logo className="max-w-full" />
+      <div className="flex flex-col-reverse justify-between gap-10 pt-24 lg:flex-row">
+        <div className="relative flex max-w-full scale-y-[300%] items-center bg-black lg:max-w-[70%] lg:scale-y-100">
+          <Logo className=" max-w-full" />
           <div className="absolute left-0 top-0 flex size-full">
             {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((item) => (
               <div key={item} className="grow bg-fence backdrop-blur-[25px]" />
@@ -20,7 +20,7 @@ export const WorkTogether = () => {
           <div className="absolute left-0 top-0 size-full" />
         </div>
 
-        <div className="flex grow flex-col gap-5 text-[18px] leading-none">
+        <div className="z-[1] flex grow flex-col gap-5 text-sm leading-none lg:text-[18px]">
           <p className="max-w-[450px] self-end uppercase">
             At ThinkIX, we specialize in delivering tailored solutions to help businesses drive growth and streamline operations. As a
             boutique agency, we offer personalized service and work closely with you to develop strategies that fit your unique needs.

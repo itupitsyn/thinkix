@@ -16,7 +16,7 @@ const linkTexts: Partial<Record<PageLink, string>> = {
 export const Footer = () => {
   return (
     <div id={PageLink.Contacts} className="flex items-end justify-between pb-20 pt-64">
-      <div className="pb-8">
+      <div className="pb-8 pl-4">
         {Object.entries(linkTexts).map(([id, header], idx) => (
           <Fragment key={id}>
             {idx > 0 && <span className="inline-block w-12"> </span>}
@@ -24,7 +24,7 @@ export const Footer = () => {
               <Link
                 href={`#${id}`}
                 className={classNames(
-                  "whitespace-nowrap bg-fuchsia-to-blue-65 bg-clip-text text-[90px] uppercase leading-none text-transparent",
+                  "whitespace-nowrap bg-fuchsia-to-blue-65 bg-clip-text text-2xl uppercase leading-none text-transparent lg:text-5xl xl:text-[90px]",
                   fontIntegralCfDemi.className,
                 )}
               >
@@ -36,7 +36,7 @@ export const Footer = () => {
         ))}
       </div>
 
-      <Image src="/img/element-footer.png" width={297} height={424} alt="" className="h-[424px] w-auto flex-none" />
+      <Image src="/img/element-footer.png" width={297} height={424} alt="" className="h-[200px] w-auto flex-none lg:h-[424px]" />
     </div>
   );
 };

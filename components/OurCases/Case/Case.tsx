@@ -22,11 +22,11 @@ export const Case: FC<CaseProps> = ({ id, header }) => {
           src={`/img/case-${id}.png`}
           width={430}
           height={480}
-          className="h-[430px] w-auto grayscale-[50%] transition-[filter] duration-500 group-hover:grayscale-0"
+          className="h-[187px] w-auto grayscale-[50%] transition-[filter] duration-500 group-hover:grayscale-0 lg:h-[430px]"
         />
         <h3
           className={classNames(
-            "absolute left-0 top-0 flex size-full items-center px-10 text-center text-[40px] uppercase leading-none",
+            "absolute left-0 top-0 flex size-full items-center px-10 text-center text-base uppercase leading-none lg:text-[40px]",
             fontHelveticaNow.className,
           )}
         >

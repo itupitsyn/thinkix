@@ -84,14 +84,14 @@ export const WorkPipeline: FC = () => {
   return (
     <div className="pt-56" id={PageLink.WorkPipeline}>
       <div className="app-container">
-        <h2 className={classNames("text-[90px] uppercase leading-none", fontIntegralCfDemi.className)}>
-          <Slash className="inline-block" />
+        <h2 className={classNames("px-4 text-2xl uppercase leading-none lg:text-5xl xl:text-[90px]", fontIntegralCfDemi.className)}>
+          <Slash className="inline-block h-6 lg:h-10 xl:h-auto" />
           Our work pipeline
         </h2>
       </div>
 
       <div
-        className="app-container relative pl-52 pr-20 pt-36"
+        className="app-container relative mx-4 pl-52 pr-20 pt-36"
         onPointerDown={(e) => {
           if (smooth) return;
           if (!swiperRef.current) return;
@@ -124,18 +124,18 @@ export const WorkPipeline: FC = () => {
             <Step
               key={idx}
               index={`/0${idx + 1}`}
-              className={classNames("min-h-[300px] w-[900px] flex-none select-none", idx % 2 && "pt-24")}
+              className={classNames("min-h-[300px] w-[485px] flex-none select-none lg:w-[900px]", idx % 2 && "pt-24")}
               {...item}
             />
           ))}
         </div>
 
         <div ref={imgRef} className={classNames("absolute -left-52 bottom-0", smooth && "transition-transform duration-700")}>
-          <WorkPipelineImage />
+          <WorkPipelineImage className="translate-x-[-17.5%] scale-x-[60%] lg:translate-x-0 lg:scale-x-100" />
         </div>
       </div>
 
-      <div className="app-container relative z-[1] flex justify-between gap-6 pb-20">
+      <div className="app-container relative z-[1] flex justify-between gap-6 px-4 pb-20">
         <GradientedButton className="text-2xl uppercase tracking-wide" onClick={onBackClick} disabled={smooth}>
           <span className="text-[27px]">🡧</span>
           /back/
