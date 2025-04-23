@@ -82,7 +82,7 @@ export const WorkPipeline: FC = () => {
   }, []);
 
   return (
-    <div className="pt-56" id={PageLink.WorkPipeline}>
+    <div className="pt-28 lg:pt-56" id={PageLink.WorkPipeline}>
       <div className="app-container">
         <h2 className={classNames("px-4 text-2xl uppercase leading-none lg:text-5xl xl:text-[90px]", fontIntegralCfDemi.className)}>
           <Slash className="inline-block h-6 lg:h-10 xl:h-auto" />
@@ -91,7 +91,7 @@ export const WorkPipeline: FC = () => {
       </div>
 
       <div
-        className="app-container relative mx-4 pl-52 pr-20 pt-36"
+        className="app-container relative mx-4 touch-none pl-52 pr-20 pt-16 lg:pt-36"
         onPointerDown={(e) => {
           if (smooth) return;
           if (!swiperRef.current) return;
@@ -136,14 +136,14 @@ export const WorkPipeline: FC = () => {
       </div>
 
       <div className="app-container relative z-[1] flex justify-between gap-6 px-4 pb-20">
-        <GradientedButton className="text-2xl uppercase tracking-wide" onClick={onBackClick} disabled={smooth}>
-          <span className="text-[27px]">🡧</span>
+        <GradientedButton className="uppercase tracking-wide lg:text-2xl" onClick={onBackClick} disabled={smooth}>
+          <span className="lg:text-[27px]">🡧</span>
           /back/
         </GradientedButton>
 
-        <GradientedButton className="text-2xl uppercase tracking-wide" onClick={onNextClick} disabled={smooth}>
+        <GradientedButton className="uppercase tracking-wide lg:text-2xl" onClick={onNextClick} disabled={smooth}>
           /next/
-          <span className="text-[27px]">🡦</span>
+          <span className="lg:text-[27px]">🡦</span>
         </GradientedButton>
       </div>
     </div>

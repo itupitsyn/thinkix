@@ -10,7 +10,7 @@ import { fontIntegralCfDemi } from "@/fonts";
 export const OurCases: FC = () => {
   return (
     <div className="flex flex-col gap-8 pt-16" id={PageLink.Cases}>
-      <div className="relative z-[1] min-h-[355px]">
+      <div className="relative z-[1] min-h-[200px] lg:min-h-[355px]">
         <div className="app-container relative z-[1] w-full">
           <h2
             className={classNames(

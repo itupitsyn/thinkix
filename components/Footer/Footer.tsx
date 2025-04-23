@@ -15,7 +15,7 @@ const linkTexts: Partial<Record<PageLink, string>> = {
 
 export const Footer = () => {
   return (
-    <div id={PageLink.Contacts} className="flex items-end justify-between pb-20 pt-64">
+    <div id={PageLink.Contacts} className="flex items-end justify-between pb-20 pt-28 lg:pt-64">
       <div className="pb-8 pl-4">
         {Object.entries(linkTexts).map(([id, header], idx) => (
           <Fragment key={id}>
