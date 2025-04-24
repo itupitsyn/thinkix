@@ -4,7 +4,7 @@ FROM $bun_image AS builder
 WORKDIR /thinkix
 COPY . .
 RUN bun i --frozen-lockfile
-# RUN bunx prisma generate
+RUN bunx prisma generate
 RUN bun run build
 
 FROM $bun_image AS runner
