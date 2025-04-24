@@ -9,7 +9,8 @@ export const POST = async (req: NextRequest) => {
       data: body,
     });
     return new NextResponse(JSON.stringify(result));
-  } catch {
+  } catch (err) {
+    console.error(err);
     return new NextResponse("", { status: 500 });
   }
 };

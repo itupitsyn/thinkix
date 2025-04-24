@@ -10,7 +10,7 @@ type SmoothlyOpeningBlockProps = PropsWithChildren<{
 }>;
 
 export const SmoothlyOpeningBlock: FC<SmoothlyOpeningBlockProps> = ({ opened, forceRender, className, duration = 200, children }) => {
-  const openedDebounced = useDebounceValue(opened, duration);
+  const [openedDebounced] = useDebounceValue(opened, duration);
   const [isInProgress, setIsInProgress] = useState(false);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ export const SmoothlyOpeningBlock: FC<SmoothlyOpeningBlockProps> = ({ opened, fo
         <div
           className={cn(
             {
-              "overflow-hidden": !(opened && openedDebounced) || isInProgress,
+              "overflow-hidden": !openedDebounced || isInProgress,
             },
             className,
           )}

@@ -91,7 +91,7 @@ export const WorkPipeline: FC = () => {
       </div>
 
       <div
-        className="app-container relative mx-4 touch-none pl-52 pr-20 pt-16 lg:pt-36"
+        className="app-container relative mx-4 touch-pan-y pl-52 pr-20 pt-16 lg:pt-36"
         onPointerDown={(e) => {
           if (smooth) return;
           if (!swiperRef.current) return;

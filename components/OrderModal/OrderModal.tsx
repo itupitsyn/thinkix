@@ -84,7 +84,7 @@ export const OrderModal: FC = () => {
 
               {error && <div className="text-red-500">{error}</div>}
 
-              <div className="flex flex-col gap-4 pt-20 sm:pt-0">
+              <div className="flex flex-col gap-4 pt-10 sm:pt-0">
                 <Controller
                   control={control}
                   name="name"

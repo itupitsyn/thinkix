@@ -19,7 +19,7 @@ export const Footer = () => {
       <div className="pb-8 pl-4">
         {Object.entries(linkTexts).map(([id, header], idx) => (
           <Fragment key={id}>
-            {idx > 0 && <span className="inline-block w-12"> </span>}
+            {idx > 0 && <span className="w-4 sm:inline-block sm:w-12"> </span>}
             <span>
               <Link
                 href={`#${id}`}
