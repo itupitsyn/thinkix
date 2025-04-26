@@ -7,7 +7,7 @@ export const WorkTogether = () => {
   return (
     <div className="app-container px-4 pt-20" id={PageLink.AboutUs}>
       <h2 className={classNames("text-2xl uppercase leading-none lg:text-5xl xl:text-[90px]", fontIntegralCfDemi.className)}>
-        Let s work together to hapness the power of AI and technology to achieve your goals
+        Let s work together to harness the power of AI and technology to achieve your goals
       </h2>
       <div className="flex flex-col-reverse justify-between gap-10 pt-24 lg:flex-row">
         <div className="relative flex max-w-full scale-y-[300%] items-center bg-black lg:max-w-[70%] lg:scale-y-100">

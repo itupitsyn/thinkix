@@ -13,10 +13,10 @@ interface StepProps {
 
 export const Step: FC<StepProps> = ({ header, index, whatHappens, outcome, className }) => {
   return (
-    <div className={classNames("flex gap-6 lg:gap-32", className)}>
+    <div className={classNames("flex gap-2 lg:gap-32", className)}>
       <PipelineArrow className="mt-2 flex-none" />
 
-      <div>
+      <div className="pr-32 sm:pr-0">
         <h3
           className={classNames(
             "mt-2 bg-fuchsia-to-blue-65 bg-clip-text text-xl uppercase text-transparent lg:mt-0 lg:text-[30px]",

@@ -26,7 +26,7 @@ export const NavMenu: FC<NavMenuProps> = ({ open, onClose }) => {
       )}
     >
       {items.map((item) => (
-        <GradientedLink key={item.id} href={`#${item.id}`} className="uppercase" onClick={onClose}>
+        <GradientedLink key={item.id} href={`#${item.id}`} className="uppercase" onClick={onClose} replace>
           {`/${item.header}`}
         </GradientedLink>
       ))}

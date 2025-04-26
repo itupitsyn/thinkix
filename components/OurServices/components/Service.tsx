@@ -2,7 +2,7 @@
 
 import { GradientedButton } from "@/components/GradientedButton";
 import { SmoothlyOpeningBlock } from "@/components/SmoothlyOpeningBlock";
-import { fontHelveticaNow } from "@/fonts";
+import { fontHelveticaNow, notoSymbols2 } from "@/fonts";
 import classNames from "classnames";
 import { FC, ReactNode, useState } from "react";
 
@@ -37,6 +37,7 @@ export const Service: FC<ServiceProps> = ({ index, header, text }) => {
           }}
           className={classNames(
             "self-start text-2xl leading-none transition-transform duration-700 lg:self-stretch lg:text-[40px]",
+            notoSymbols2.className,
             show && "-rotate-90",
           )}
         >

@@ -27,6 +27,7 @@ export const Footer = () => {
                   "whitespace-nowrap bg-fuchsia-to-blue-65 bg-clip-text text-2xl uppercase leading-none text-transparent lg:text-5xl xl:text-[90px]",
                   fontIntegralCfDemi.className,
                 )}
+                replace
               >
                 {header}
               </Link>
