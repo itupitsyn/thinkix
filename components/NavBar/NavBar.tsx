@@ -8,7 +8,7 @@ export const NavBar: FC = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="relative z-50 flex justify-end px-10 pt-12">
+    <nav className="app-container relative z-50 flex justify-end px-10 pt-12">
       <GradientedButton className="uppercase" onClick={() => setOpen((prev) => !prev)}>
         /menu
       </GradientedButton>

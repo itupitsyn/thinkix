@@ -1,0 +1,47 @@
+{
+  "1": {
+    "title": "Chatbot for Real Estate Agency",
+    "challenge": "Managers spent 60% of their time answering repetitive queries (pricing, deposits, viewings) via messengers and calls, limiting focus on real deals and reducing profitability.",
+    "solution": "An NLP-powered chatbot that:\n\n• Answers typical queries 24/7 (neighborhoods, prices, terms).\n• Schedules viewings and sends reminders.\n• Integrates with CRM, updating transaction statuses automatically.",
+    "benefits": ["Cost Savings", "Higher Revenue & Profits", "Time Efficiency", "Better Customer Experience"],
+    "results": [
+      "$5,000–$15,000 annual savings: Through automation.",
+      "15–25% boost in closed deals: Directly increasing profits.",
+      "Optimized workflows: Reduced manual labor, and increased focus on strategic growth."
+    ]
+  },
+  "2": {
+    "title": "Content Automation for SMM",
+    "challenge": "The company needs to regularly publish content: social media posts, email newsletters, blog articles, and landing page descriptions.",
+    "solution": "An LLM-powered content generator trained on the company’s materials:",
+    "benefits": ["Lower Content Costs", "Increased Reach and Engagement", "Time Efficiency", "Stronger Brand Presence"],
+    "results": [
+      "Cut content creation costs by 50-70%.",
+      "Boost marketing effectiveness with more content and higher engagement.",
+      "Scale effortlessly – generate content for multiple platforms and audiences without extra costs."
+    ]
+  },
+  "3": {
+    "title": "Process Automation: Text → SQL",
+    "challenge": "The company frequently needs quick reports (e.g., sales by period, year-over-year comparisons). They face challenges with:\n\n• Time-consuming manual work involving BI systems, SQL queries, Excel exports, and chart building.\n• Dependency on analysts for even simple queries.\n• Data errors from incorrect queries or misinterpretation.",
+    "solution": "An interactive NLP-powered bot that:\n\n• Converts text queries into SQL (Show sales for March).\n• Automatically retrieves data from the database.\n• Generates readable reports and charts instantly.\n• Integrates with BI systems and CRMs for direct export to dashboards or Excel.",
+    "benefits": ["Reduced Analytics Costs", "Faster Decision-Making", "Time Savings for the Team", "Enhanced Business Transparency"],
+    "results": [
+      "$20,000+ annual savings: Reduced analyst involvement in basic queries.",
+      "95% faster queries: Reduced query time from 30-60 minutes to 10-15 seconds.",
+      "Reduced workload: Technical specialists focus on complex tasks.",
+      "Improved data access: Instant data access for faster, more accurate decision-making."
+    ]
+  },
+  "4": {
+    "title": "Automated LinkedIn Lead Generation: Finding Lookalike Clients",
+    "challenge": "The company needs to find 50-100 clients similar to their 10 ideal clients, facing:\n\n• Slow and inaccurate manual searches through thousands of profiles.\n• High labor costs for profile analysis.\n• Ineffective cold outreach due to poor targeting.",
+    "solution": "An AI-powered lead generation system that:\n\n• Analyzes profiles based on position, industry, keywords, and activity.\n• Automatically creates a list of relevant leads.\n• Suggests personalized outreach strategies.\n• Optionally supports semi-automated invitation sending with personalized messages.",
+    "benefits": ["Reduced Client Acquisition Costs", "Higher Conversion and Efficiency", "Time Savings for the Team", "Simplified Scaling"],
+    "results": [
+      "5-10x faster lead generation: Less manual effort, higher accuracy.",
+      "Lower acquisition costs: Automation reduces expenses.",
+      "Increased sales: Focus on high-quality leads without growing the team."
+    ]
+  }
+}

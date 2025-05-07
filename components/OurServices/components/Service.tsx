@@ -17,7 +17,13 @@ export const Service: FC<ServiceProps> = ({ index, header, text }) => {
 
   return (
     <div className="">
-      <div className="flex max-w-[1200px] justify-between gap-6">
+      <div
+        className="flex max-w-[1200px] justify-between gap-6 hover:cursor-pointer"
+        role="button"
+        onClick={() => {
+          setShow((prev) => !prev);
+        }}
+      >
         <div className="flex items-start gap-5 text-xl lg:items-center lg:gap-44">
           <div className="leading-none lg:text-[20px]">{index}</div>
 
@@ -32,9 +38,6 @@ export const Service: FC<ServiceProps> = ({ index, header, text }) => {
         </div>
 
         <GradientedButton
-          onClick={() => {
-            setShow((prev) => !prev);
-          }}
           className={classNames(
             "self-start text-2xl leading-none transition-transform duration-700 lg:self-stretch lg:text-[40px]",
             notoSymbols2.className,
